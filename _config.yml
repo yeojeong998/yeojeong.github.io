@@ -1,7 +1,7 @@
 # Setup
 title: Poole
 tagline: The Jekyll Butler
-remote_theme: poole/poole
+remote_theme: "poole/lanyon"
 url: "https://yeojeong998.github.io"
 paginate: 1
 baseurl: ""
