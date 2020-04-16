@@ -96,7 +96,7 @@ author:
   name             : "Yeojeong Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "An **amazing** blalala"
-  location.        : "South Korea"
+  location         : "South Korea"
   # location         : "Los Altos, CA"
   email            : "yeojeong.kim90@gmail.com"
   links:
