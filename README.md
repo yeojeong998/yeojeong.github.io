@@ -1,3 +1,3 @@
 # yeojeong998.github.io
 
-This is test page.
+This is a Yeojeong's Tech Blog.
