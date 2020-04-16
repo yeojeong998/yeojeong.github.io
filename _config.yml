@@ -1,7 +1,7 @@
 remote_theme: poole/lanyon
 
 # Setup
-title:               Lanyon
+title:               BBBlog
 tagline:             "Yeojeong's Tech Blog"
 description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 https://yeojeong998.github.io
