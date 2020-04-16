@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Yeojeong's blog!"
-layout: post
+layout: page
 ---
 
 
