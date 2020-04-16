@@ -96,12 +96,13 @@ author:
   name             : "Yeojeong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Los Altos, CA"
+  location.        : "South Korea"
+  # location         : "Los Altos, CA"
   email            : "yeojeong.kim90@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:yeojeong.kim90@gmail.com
+      # url: "mailto:yeojeong.kim90@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
