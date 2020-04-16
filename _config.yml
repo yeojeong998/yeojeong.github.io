@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Yeojeong"
 description              : "I am an amazing person."
 url                      : "https://yeojeong998.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
