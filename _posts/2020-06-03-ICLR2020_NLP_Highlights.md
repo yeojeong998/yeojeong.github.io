@@ -5,7 +5,7 @@ categories: 블로그 번역
 ---
 원본은 post는 [original-ICLR2020-post] 여기를 보시면 됩니다.
 
-![image1](/images/icrl_logo.png)
+![image1](/images/iclr_logo.png)
 
 1. About ICLR 2020
 "The International Conference on Learning Representations”
