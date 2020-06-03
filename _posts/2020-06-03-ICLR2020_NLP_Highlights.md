@@ -5,6 +5,9 @@ categories: 블로그 번역
 ---
 원본은 post는 [original-ICLR2020-post] 여기를 보시면 됩니다.
 
+![image2](/images/icrl_logo.png)
+
+1. About ICLR 2020
 "The International Conference on Learning Representations”
 NIPS, ICML과 함께 top-tier AI conference 이졍.
 
@@ -41,10 +44,6 @@ NIPS, ICML과 함께 top-tier AI conference 이졍.
     * 실험적으로 self-attention layers가 CNN layers랑 비슷하게 pixel-grid 패턴에 attend함으로써, 저자들의 분석을 입증했다.
 * Are Transformers universal approximators of sequence-to-sequence functions?
     * (이건 좀 이론적인 논문) 저자들은 “transformer model이 compact domain에서 임의의 연속된 sequence-to-sequence functions를 보편적으로 근사할 수 있다는걸 보여주겠어요.” 라고 했다. 저자들은 고정된 width의 self-attention layers가, transformer의 보편적 근사 특성에 key 역할을 하며, input sequences의 contextual mappings를 계산할 수 있다는 것도 입증했다. 
-
-
-![image2](/images/2.png)
-
 
 
 [original-ICLR2020-post]: https://towardsdatascience.com/iclr-2020-nlp-highlights-511deb99b967
