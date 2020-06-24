@@ -15,6 +15,7 @@ E2E ASR은 여러 장점을 가진 NN-based speech recognition계에서 떠오�
 그래서 우리는 interspeech 2019에 이런 E2E 접근방식의 ASR 단점들을 다루기 위해서 3편의 논문을 냈다.
 
 **“Forget a bit to learn better: soft forgetting for ctc-based automatic speech recognition”**
+
 E2E ASR의 성능이 hybrid ASR의 성능과 비등해졌다. 이건 powerful NN 구조와, WER-related loss ftn, 그리고 graphics/tensor processing unit에 의존한 아주 많은 실험들 덕분이다.
 이전까지의 CTC-based E2E ASR 시스템은 blstm 네트웍을 사용하고, 각 time step에서 더 다양한 acoustic context를 잡아내기 위해서 모든 발화에 대해 unroll한 구조일 때 좋은 성능을 냈다. (아래 그림1)
 ![image1](/images/ibm.1.png)
@@ -32,6 +33,7 @@ E2E ASR의 성능이 hybrid ASR의 성능과 비등해졌다. 이건 powerful NN
 
 
 **“Advancing sequence-to-sequence based speech recognition”**
+
 Attention based encoder-decoder 혹은 “all-neural” seq2seq model은 E2E ASR의 대체재적인 접근방식이다. 이 모델들은 input acoustic feature sequence를 encode 하는데에 RNN을 쓰고; encoder outputs에다가 attention weights를 assign하는데에는 attention NN을 쓰고; sequence of symbol(예를들어, character)를 predict하는 데에 RNN decoder를 쓴다. 이 논문에서는 잘 알려지고 공개적으로 쓸 수 있는 db인 librispeech를 사용해서 attention-based 접근방법의 SOTA를 찍어따.
 
 우리 결과는 강력한 Recurrent LM rescoring과 결합한 hybrid model이랑 비교했다. 특히 우리는 seq2seq ASR 모델의 몇가지 기술의 영향에 대해 연구했다: sophisticated data augmentation, 다양한 dropout schemes, scheduled sampling, warm-restart, 다양한 input feature, modeling units, sub-sampling rate, LM, *discriminative training, decoder search configurations.
@@ -41,6 +43,7 @@ training configuration과 search parameters를 seq2seq ASR model에 대해 optim
 
 
 **“Guiding CTC posterior spike timings for improved posterior fusion and knowldge distillation”**
+
 기존 frame-level alignments로 훈련된 ASR시스템은 성능을 높이기 위해서 쉽게 *posterior fusion을 할 수 있고 knowledge distillation으로 더 좋은 단일 모델을 쉽게 만들 수 있었다. CTC loss로 훈련된 e2e asr 시스템은 frame-level alignment를 요구하지 않고, 따라서 model 훈련이 간소화되었다. 그러나, sparse하고 CTC 모델의 모호한 posterior spike timing이 multi model로부터 posterior fusion 할때와 CTC model들 사이에서 knowledge distillation 할 때 어려움을 만들었다. 
 예를들어 그림3(a)는 uniLSTM phone CTC model을 다른 초기값과 다른 training data 순서로 설정해서 나온 posterior spike 이다. 이거 보면 splike가 aligned 제대로 안되어있다. 그래서 posterior fusion이 잘 동작하지 않는다. 그림3(c)는 uniLSTM과 BiLSTM phone CTC model을 사용한 posterior spikes를 보여주는 그림이다. 완전히 다른 spike timings 때문에 BiLSTM에서 uniLSTM으로의 knowledge distillation은 그냥은 불가능하다.
 ![image4](/images/ibm.4.png)
